@@ -56,8 +56,8 @@ route.post("/login",(req,res,next)=>{
             }
             console.log(data)
             if(data){
-              const token=  jwt.sign({email:user[0].email,
-                _id:user[0]._id},process.env.JWT_KEY,
+              const token=jwt.sign({email:user[0].email,
+                _id:user[0]._id},'xbbwsdjcw4fc54e54c6dv54d56v46d4',
                 {
                     expiresIn:"1h"
                 })
