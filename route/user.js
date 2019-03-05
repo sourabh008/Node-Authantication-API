@@ -54,6 +54,7 @@ route.post("/login",(req,res,next)=>{
                     massage:"Auth failed"
                 })
             }
+            console.log(data)
             if(data){
               const token=  jwt.sign({email:user[0].email,
                 _id:user[0]._id},process.env.JWT_KEY,
