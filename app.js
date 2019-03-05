@@ -11,9 +11,9 @@ app.use(bodyparser.urlencoded({extended:false}));
 app.use(bodyparser.json());
 const userroutes=require("./route/user");
 app.use("/user",userroutes);
-app.use((req,res,next)=>{
+/*app.use((req,res,next)=>{
     res.json("Server Started")
-})
+})*/
 app.get('/abc',(req,res)=>{
     res.send("hi")
 })
