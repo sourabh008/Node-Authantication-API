@@ -14,6 +14,9 @@ app.use("/user",userroutes);
 app.use((req,res,next)=>{
     res.json("Server Started")
 })
+app.get('/abc',(req,res)=>{
+    res.send("hi")
+})
 
 
 
