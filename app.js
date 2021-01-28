@@ -3,7 +3,6 @@ const app=express();
 const mongoose=require("mongoose");
 const cors=require("cors");
 const bodyparser=require("body-parser");
-mongoose.connect("mongodb+srv://sourabh_kamboj:sou@1234@cluster0-vwdve.mongodb.net/test?retryWrites=true",
 { useNewUrlParser: true })
 
 app.use(cors());
